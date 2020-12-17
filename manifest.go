@@ -9,12 +9,12 @@ import (
 
 // ManifestFile defines a a file within FileManifestList
 type ManifestFile struct {
-	Modname	string	`json:"Modname"`
-	FileName 	string `json:"Filename"`
-	FileVersion	string	`json:"FileVersion"`
-	FileID	int	`json:"FileID"`
-	FileURL	string `json:"FileUrl"`
-	FileHash string `json:"FileHash"`
+	Modname	string	`json:"modName"`
+	FileName 	string `json:"fileName"`
+	FileVersion	string	`json:"fileVersion"`
+	FileID	int	`json:"fileID"`
+	FileURL	string `json:"fileUrl"`
+	FileHash string `json:"fileHash"`
 }
 
 // Manifest defines a manifest or whatever
@@ -22,7 +22,7 @@ type Manifest struct {
 	ManifestFileVersion string 	`json:"ManifestFileVersion"`
 	ModpackID	string 	`json:"ModpackID"`
 	LaunchCommand	string	`json:"LaunchCommand"`
-	FileManifestList []ManifestFile	`json:"FileManifestList"`
+	ModFileList []ManifestFile	`json:"ModFileList"`
 }
 
 func readManifestFile(filename string) (*Manifest , error) {

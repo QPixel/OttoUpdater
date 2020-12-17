@@ -1,2 +1,4 @@
-.gotron
-ui/node_modules
+.vscode
+cache
+catalog.js
+ottopudater
